@@ -1,0 +1,49 @@
+@import url("./font.css");
+
+body {
+    margin: 0;
+    color: white;
+    background-color: #303030;
+}
+
+.divider {
+    height: 16px;
+}
+
+.gallery {
+    height: 240px;
+    background-color: #181818;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+  
+.gallery img, .gallery div, .gallery video {
+    height: 100%;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.quick_info {
+    color: lightgray;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0 16px 0 16px;
+}
+
+h1 {
+    font-family: Ubuntu Light;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: #7dffff;
+}

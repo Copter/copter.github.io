@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/starter.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Sanpat Chanthanuraks</title>
+  </head>
+  <body onload="pageLoadScript()" style="padding: 0 0 0 0;">
+
+    <video autoplay muted loop class="background_video">
+      <source src="assets/videos/Demo Reel Short.mp4" type="video/mp4">
+    </video>
+
+    <img class="background_tint" id="background_tint" src="assets/images/Background tint.svg"/>
+
+    <div class="background_text" id="background_text">
+      <p style="font-size: 6vw; font-family: Ubuntu Light;"><span style="font-family: Ubuntu;">SANPAT</span> CHANTHANURAKS</p>
+      <p id="subtitle_text" style="font-size: 2.5vw; font-family: Ubuntu Light; margin-top: -24px;">Information and Communication Engineer</p>
+    </div>
+
+    <a href="index.html" style="color: white;">
+      <div class="top_right_button_click_area">
+        <div class="top_right_button_tip">
+          <img class="top_right_button_tip_tint" src="assets/images/Top right button tip tint.svg"/>
+          <div class="top_right_button_tip_text" style="font-family: Ubuntu Light; font-size: 4vw;"><span style="font-family: Ubuntu;">PROFILE</span> PAGE</div>
+        </div>
+        <img class="top_right_button" src="assets/images/Top right button to profile page blue.svg"/>
+        <img class="top_right_button_tint" src="assets/images/Top right button glow tint.svg"/>
+      </div>
+    </a>
+
+    <div class="parallax" onclick="toggleBackgroundTint()"></div>
+
+    <div class="background_body">
+      <img class="body_triangle" src="assets/images/Above body triangle blue.png"/>
+      <div class="body_triangle_text" id="scroll_tip_text" style="font-size: 3vw; opacity: 0.5;">Scroll down for more!</div>
+
+      <div class="actual_body">
+        <div class="grid-col-12">
+          <div style="font-family: Ubuntu Light; font-size: calc(1.5em + 2vw);"><span style="font-family: Ubuntu;">GAME</span> PROTOTYPES</div>
+        </div>
+
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('dinosword')">
+            <img src="assets/gifs/dinosword.gif" class="card_image"/>
+            <div class="card_title"><h4>Dino-sword</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2020</span></div>
+          </div>
+        </div>
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('hatchling')">
+            <img src="assets/gifs/hatchling.gif" class="card_image"/>
+            <div class="card_title"><h4>Hatchling</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2018</span></div>
+          </div>
+        </div>
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('bindinglight')">
+            <img src="assets/gifs/bindinglight.gif" class="card_image"/>
+            <div class="card_title"><h4>Binding Light</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2018</span></div>
+          </div>
+        </div>
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('grc2018')">
+            <img src="assets/gifs/GRC2018.gif" class="card_image"/>
+            <div class="card_title"><h4>Project GRC 2018</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2018</span></div>
+          </div>
+        </div>
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('soulbound')">
+            <img src="assets/project_images/IDD CDT Trophy.jpg" class="card_image"/>
+            <div class="card_title"><h4>Soulbound</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2016</span></div>
+          </div>
+        </div>
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('thealienhero')">
+            <img src="assets/gifs/thealienhero.gif" class="card_image"/>
+            <div class="card_title"><h4>The Alien Hero</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2012 - 2014</span></div>
+          </div>
+        </div>
+        
+        <div class="grid-col-12">
+          <div style="font-family: Ubuntu Light; font-size: calc(1.5em + 2vw);"><span style="font-family: Ubuntu;">CLASS</span> PROJECTS</div>
+        </div>
+
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('fishschoolingsim')">
+            <img src="assets/gifs/fish schooling sim clip.gif" class="card_image"/>
+            <div class="card_title"><h4>Fish Schooling Simulation</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2021-2022</span></div>
+          </div>
+        </div>
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('qpital')">
+            <img src="assets/project_images/Qpital phone screen showcase.png" class="card_image"/>
+            <div class="card_title"><h4>Qpital</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2021</span></div>
+          </div>
+        </div>
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('syninternship')">
+            <img src="assets/project_images/syn internship screenshot 2.png" class="card_image"/>
+            <div class="card_title"><h4>News Analysis Dashboard</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2021</span></div>
+          </div>
+        </div>
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('onepass')">
+            <img src="assets/project_images/OnePass 2.png" class="card_image"/>
+            <div class="card_title"><h4>One Pass</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2020-2021</span></div>
+          </div>
+        </div>
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('escapeplan')">
+            <img src="assets/gifs/Netcentric Escape Plan.gif" class="card_image"/>
+            <div class="card_title"><h4>Escape Plan</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2020</span></div>
+          </div>
+        </div>
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('aincrad')">
+            <img src="assets/project_images/Aincrad Screenshots.png" class="card_image"/>
+            <div class="card_title"><h4>Aincrad</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2019</span></div>
+          </div>
+        </div>
+
+        <div class="grid-col-12">
+          <div style="font-family: Ubuntu Light; font-size: calc(1.5em + 2vw);"><span style="font-family: Ubuntu;">TOOLS</span> & UTILITIES</div>
+        </div>
+
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('habiticarepeater')">
+            <img src="assets/project_images/Habitica Repeater Screenshot.png" class="card_image"/>
+            <div class="card_title"><h4>Habitica Repeater</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2020</span></div>
+          </div>
+        </div>
+
+        <div class="grid-col-12">
+          <div style="font-family: Ubuntu Light; font-size: calc(1.5em + 2vw);"><span style="font-family: Ubuntu;">ART</span> & OTHER PROJECTS</div>
+        </div>
+
+        <div class="grid-col-4" style="display: none;">
+          <div class="card" style="vertical-align: middle;">
+            <img src="assets/images/placeholder.png" class="card_image"/>
+            <div class="card_title"><h4>Video Editing</h4></div>
+            <div class="card_subtitle"><span style="float: right;"></span></div>
+          </div>
+        </div>
+        <div class="grid-col-4" style="display: none;">
+          <div class="card" style="vertical-align: middle;">
+            <img src="assets/images/placeholder.png" class="card_image"/>
+            <div class="card_title"><h4>Animated Wallpaper</h4></div>
+            <div class="card_subtitle"><span style="float: right;"></span></div>
+          </div>
+        </div>
+        <div class="grid-col-4" style="display: none;">
+          <div class="card" style="vertical-align: middle;">
+            <img src="assets/images/placeholder.png" class="card_image"/>
+            <div class="card_title"><h4>Character Tokens</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2019-2021</span></div>
+          </div>
+        </div>
+        <div class="grid-col-4">
+          <div class="card" style="vertical-align: middle;" onclick="openPageWithModal('linesticker')">
+            <img src="assets/gifs/line sticker desktop screen rec.gif" class="card_image"/>
+            <div class="card_title"><h4>Animated LINE Sticker Set</h4></div>
+            <div class="card_subtitle"><span style="float: right;">2019</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal_content">
+        <div class="modal_x_button">&times;</div>
+        <iframe class="modal_iframe" id="modal_iframe" src="index.html"></iframe> 
+      </div>
+    </div>
+
+  </body>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects.js"></script>
+</html>

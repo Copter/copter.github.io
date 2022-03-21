@@ -1,0 +1,138 @@
+@import url("./font.css");
+
+.background_body {
+    height: 2800px;
+}
+
+.actual_body {
+    height: 2800px;
+}
+
+@media (max-width:480px) {
+    .background_body {
+        height: 5600px;
+    }
+
+    .actual_body {
+        height: 5600px;
+    }
+}
+
+.card {
+    padding: 8px 8px 16px 8px;
+    font-family: Ubuntu Light;
+    transition: 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 0 0;
+    transform: translate3d(0px, -4px, 0px);
+}
+
+.card_image {
+    width: calc(100% + 16px); 
+    margin: -8px -8px 8px -8px; 
+    border-radius: 8px 8px 0 0;
+}
+
+.card_title {
+    margin-top: 4px;
+    height: 64px;
+}
+
+.card_subtitle {
+    height: 1rem;
+    font-family: Ubuntu;
+    color: #303030;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 11;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+  
+.modal_content {
+    background-color: #303030;
+    color: black;
+    margin: auto;
+    width: 80%;
+    border-radius: 8px;
+
+    -webkit-animation-name: animate_modal_in;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animate_modal_in;
+    animation-duration: 0.5s
+}
+
+.modal_content_out {
+    -webkit-animation-name: animate_modal_out;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animate_modal_out;
+    animation-duration: 0.5s
+}
+
+.modal_iframe {
+    border: none; 
+    width: 100%; 
+    min-height: 80vh; 
+    margin-top: -16px;
+}
+
+@media (max-width:480px) {
+    .modal {
+        padding-bottom: 0px;
+    }
+
+    .modal_content {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .modal_iframe {
+        height: calc(100vh - 86px); 
+    }
+}
+
+.modal_x_button {
+    color: lightgray;
+    float: right;
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 16px;
+}
+  
+.modal_x_button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+@-webkit-keyframes animate_modal_in {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes animate_modal_in {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@-webkit-keyframes animate_modal_out {
+    from {opacity: 1} 
+    to {opacity: 0}
+}
+
+@keyframes animate_modal_out {
+    from {opacity: 1}
+    to {opacity: 0}
+}

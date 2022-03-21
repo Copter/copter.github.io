@@ -1,0 +1,243 @@
+@import url("./font.css");
+
+body {
+    color: white;
+    font-family: Ubuntu;
+}
+
+.parallax {
+    min-height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top_right_button {
+    width: 14.16%;
+    min-width: 136px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.top_right_button_tip {
+    width: 47.06%;
+    min-width: 452px;
+    position: fixed;
+    top: 0;
+    right: -1600px;
+    z-index: 8;
+    transition: 0.5s;
+}
+
+.top_right_button_tip_tint {
+    width: 100%;
+}
+
+.top_right_button_tip_text {
+    position: absolute;
+    top: 0;
+    left: 3.5vw;
+    /*transform: translate(-50%, -50%);*/
+}
+
+.top_right_button_tint {
+    width: 13.33%;
+    min-width: 128px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.top_right_button_click_area:hover .top_right_button_tip {
+    right: 0px;
+    transition: 0.5s;
+}
+
+.top_right_button_click_area:hover .top_right_button_tint {
+    visibility: visible;
+}
+
+@media (max-width:480px) {
+    .top_right_button_tip {
+        visibility: hidden;
+    }
+}
+
+.body_triangle {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.body_triangle_text {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    padding-left: 1vw;
+    margin-left: -50%;
+    transition: 0.5s;
+}
+
+.body_triangle_text.show {
+    margin-left: 0;
+    transition: 0.5s;
+}
+
+.background_video {
+    left: 49.9%;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -950px;
+    */
+    z-index: -9;
+}
+
+.background_tint {
+    left: 49.9%;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -8;
+    opacity: 1;
+    transition: 1s;
+}
+
+.background_text {
+    width: 100%;
+    padding: 30vh 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: -7;
+    opacity: 1;
+    transition: 1s;
+}
+
+.background_tint.hide {
+    opacity: 0;
+    transition: 1s;
+}
+
+.background_text.hide {
+    opacity: 0;
+    transition: 1s;
+}
+
+.background_text mark {
+    background-color: white; 
+    color: black;
+}
+
+.background_body {
+    height: 1900px;
+    background-color:#303030;
+    background-image: url("../images/Body Background.svg");
+    background-position: center top;
+    font-size: 36px;
+}
+
+.actual_body {
+    /*margin: 0 10vw 0 10vw;*/
+    margin: auto;
+    width: 70vw;
+    height: 1900px;
+    background-color: #303030;
+    background-position: center top;
+    font-size: 36px;
+    font-family: Ubuntu;
+}
+
+@media (max-width:480px) {
+    .background_body {
+        height: 2500px;
+    }
+
+    .actual_body {
+        padding: 0 16px 0 16px;
+        width: 100%;
+        height: 2500px;
+    }
+}
+
+[class*="grid-col-"] {
+    float: left;
+    padding: 0 16px 0 0;
+}
+
+.grid-col-1 {width: 8.33%;}
+.grid-col-2 {width: 16.66%;}
+.grid-col-3 {width: 25%;}
+.grid-col-4 {width: 33.33%;}
+.grid-col-5 {width: 41.66%;}
+.grid-col-6 {width: 50%;}
+.grid-col-7 {width: 58.33%;}
+.grid-col-8 {width: 66.66%;}
+.grid-col-9 {width: 75%;}
+.grid-col-10 {width: 83.33%;}
+.grid-col-11 {width: 91.66%;}
+.grid-col-12 {width: 100%;}
+
+@media (max-width:480px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+.portrait_circle {
+    border-radius: 50%;
+    width: 100%;
+    display: block;
+    margin: 16px auto 16px auto;
+    border: 8px solid white;
+}
+
+.card {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.8);
+    margin: 0 0 16px 0;
+    padding: 8px;
+    font-family: Ubuntu;
+    font-size: 1rem;
+    color: black;
+}
+
+@media (max-width:480px) {
+    .cut_if_too_long {
+        display: none;
+    }
+}
+
+.see_other_projects_link {
+    float: right; 
+    background-color: #303030;
+    margin: 0 -8px 0 0;
+    padding: 0 8px 0 8px;
+    border-radius: 8px 0 7px 0;
+}
+
+a {
+    color: #7dffff;
+}
+
+a:hover {
+    color: white;
+}
