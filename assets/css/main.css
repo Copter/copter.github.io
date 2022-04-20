@@ -1,4 +1,4 @@
-@import url("./font.css");
+@import url("../css/font.css");
 
 body {
     color: white;
@@ -75,7 +75,7 @@ body {
     bottom: 0;
 }
 
-@media (max-width:480px) {
+@media screen and (orientation:portrait) {
     .body_triangle {
         visibility: hidden;
     }

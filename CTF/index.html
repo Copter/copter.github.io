@@ -3,13 +3,61 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Catch the Fruit!</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Catch the Fruit!</title>
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/SecretCTF.json");
     </script>
   </head>
   <body>
-    <div id="gameContainer" style="width: 360px; height: 640px; margin: auto"></div>
+    <div class="border"><div id="gameContainer"></div></div>
+
+    <a href="../index.html" style="color: white;">
+      <div class="top_right_button_click_area">
+        <div class="top_right_button_tip">
+          <img class="top_right_button_tip_tint" src="../assets/images/Top right button tip tint.svg"/>
+          <div class="top_right_button_tip_text" style="font-family: Ubuntu Light; font-size: 4vw;"><span style="font-family: Ubuntu;">PROFILE</span> PAGE</div>
+        </div>
+        <img class="top_right_button" src="../assets/images/Top right button to profile page blue.svg"/>
+        <img class="top_right_button_tint" src="../assets/images/Top right button glow tint.svg"/>
+      </div>
+    </a>
   </body>
 </html>
+
+<style>
+  body {
+    background-color: #e7e7e7;
+  }
+    
+ @media screen and (orientation:landscape) {
+    .border {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 4px solid;
+      border-radius: 8px;
+    }
+
+    #gameContainer {
+      width: 360px; 
+      height: 640px; 
+      margin: auto
+    }
+  }
+
+  @media screen and (orientation:portrait) {
+    #gameContainer {
+      width: 100%; 
+      aspect-ratio: 9/16;
+      margin: auto;
+
+    }
+
+    .top_right_button_click_area {
+      display: none;
+    }
+  }
+</style>
